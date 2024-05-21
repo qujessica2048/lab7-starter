@@ -94,7 +94,6 @@ function initFormHandler() {
 	form.addEventListener('submit', event => {
 		event.preventDefault();
 	
-		// Steps B4-B9 will occur inside the event listener from step B3
 		// B4. Create a new FormData object from the <form> element reference above
 		const formData = new FormData(form);
 	
@@ -123,11 +122,10 @@ function initFormHandler() {
 	  });
 	
 	  // B10. Get a reference to the "Clear Local Storage" button
-	  const clearButton = document.querySelector('.clear-storage');
+	  const clearButton = document.querySelector('.danger');
 	
 	  // B11. Add a click event listener to clear local storage button
 	  clearButton.addEventListener('click', () => {
-		// Steps B12 & B13 will occur inside the event listener from step B11
 		// B12. Clear the local storage
 		localStorage.clear();
 	
